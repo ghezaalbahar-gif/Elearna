@@ -6,14 +6,9 @@ import Footer from '../components/Footer'
 const pageNames = {
   '/courses': 'Courses',
   '/cart': 'Cart',
-  '/login': 'Login',
-  '/sign-up': 'Register',
   '/contact-one': 'Contact',
-  '/career': 'Career',
-  '/events': 'Events',
   '/team': 'Instructor',
   '/about-one': 'About',
-  '/blog-one': 'Blog',
   '/pricing-one': 'Pricing',
 }
 

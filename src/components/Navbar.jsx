@@ -4,6 +4,7 @@ import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 import { ChevronDown, ChevronRight, Menu, X } from 'lucide-react'
 import { assets } from '../data/assets'
 import { headerActions, primaryNav } from '../data/navigation'
+import CartButton from './cart/CartButton'
 
 const slugify = (label) => label.toLowerCase().replace(/\s+/g, '-')
 
@@ -232,12 +233,7 @@ export default function Navbar({ variant = 'transparent', navItems = primaryNav 
           </nav>
 
           <div className="navbar-actions">
-            <Link to={headerActions.cart} className="cart-link" aria-label="View cart, 0 items">
-              <img src={assets.cartIcon} width="18" height="23" alt="" aria-hidden="true" />
-              <span className="cart-count" aria-hidden="true">
-                0
-              </span>
-            </Link>
+            <CartButton />
             <div className="account-links">
               <Link to={headerActions.login} className="account-link">
                 Login

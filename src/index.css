@@ -14,6 +14,14 @@
   --color-haze: #f1f4f4;
   --color-utility: #d6d6d6;
   --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --color-field: rgba(239, 246, 248, 0.11);
+  --color-field-focus: rgba(255, 255, 255, 0.55);
+  --color-check-on: rgba(27, 44, 48, 0.3);
+  --color-danger: #ffdede;
+  --shadow-auth: 0 60px 120px 0 rgb(9, 20, 22);
+  --color-line-soft: rgba(123, 124, 125, 0.2);
+  --color-line-faint: rgba(27, 44, 48, 0.1);
+  --color-cart-scrim: rgba(0, 0, 0, 0.72);
 }
 
 :root {
@@ -8488,13 +8496,40 @@ img {
   }
 }
 
-/* ---------- Integrated pages: Pricing, Team, FAQ, Contact Three ---------- */
+/* ---------- Integrated pages: Pricing, Team, FAQ, Contact Three, Career, Blog ---------- */
 
 /* The integrated sections were built against Tailwind preflight where p has no
    margin; the legacy site CSS adds a 10px bottom margin. Scope the reset so the
    shared navbar/footer keep their existing spacing. */
 .integrated-page p {
   margin: 0;
+}
+
+/* Blog card text block: 20px on phones, 30/25/25 from 768px, 40px sides from 1280px.
+   --pad is reused by .card-rule so the hairline can span the full card width. */
+.card-body {
+  --pad: 25px;
+  padding: 30px var(--pad) 25px;
+}
+
+@media (min-width: 1280px) {
+  .card-body {
+    --pad: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-body {
+    --pad: 20px;
+    padding: 20px;
+  }
+}
+
+.card-rule {
+  margin-inline: calc(var(--pad) * -1);
+  padding-inline: var(--pad);
+  padding-top: 15px;
+  border-top: 1px solid var(--color-line);
 }
 
 .reveal {

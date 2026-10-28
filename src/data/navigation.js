@@ -42,8 +42,6 @@ export const primaryNav = [
   {
     label: 'Contact',
     children: [
-      { label: 'Contact One', to: '/contact-one' },
-      { label: 'Contact Two', to: '/contact-two' },
       { label: 'Contact Three', to: '/contact-three' },
     ],
   },
@@ -150,8 +148,6 @@ export const homeNav = [
   {
     label: 'Contact',
     children: [
-      { label: 'Contact One', to: '/contact-one' },
-      { label: 'Contact Two', to: '/contact-two' },
       { label: 'Contact Three', to: '/contact-three' },
     ],
   },
@@ -193,14 +189,13 @@ export const footerColumns = [
     links: [
       { label: 'Course details', to: '/courses/crisis-management-and-problem-solving-strategies' },
       { label: 'Instructor details', to: '/team-members/lee-schmitt' },
-      { label: 'Blog details', to: '/blog-one/teaching-tools' },
+      { label: 'Blog details', to: '/blog-one/the-evolution-of-teaching-tools-in-the-21st-century' },
     ],
   },
 ]
 
 export const headerActions = {
-  cart: '/cart',
-  login: '/login',
+  login: '/log-in',
   register: '/sign-up',
   getStarted: '/contact-three',
   browseCourses: '/courses',

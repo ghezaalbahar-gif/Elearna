@@ -1,10 +1,11 @@
 import { useId, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import CategoryCourseCard from '../components/CategoryCourseCard'
 import AboutCTA from '../components/about/AboutCTA'
 import AboutFooter from '../components/about/AboutFooter'
 import Placeholder from './Placeholder'
+import { useCart } from '../context/CartContext'
 import { assets } from '../data/assets'
 import {
   courseOverview,
@@ -30,8 +31,8 @@ export default function CourseDetails() {
 }
 
 function CourseDetailsView({ course }) {
+  const { addItem } = useCart()
   const isPaid = course.price !== 'Free'
-  const detailsPath = `/courses/${course.slug}`
   const [activeTab, setActiveTab] = useState(isPaid ? 'Curriculum' : 'Overview')
   const [activeLesson, setActiveLesson] = useState(0)
   const baseId = useId().replace(/:/g, '')
@@ -99,9 +100,9 @@ function CourseDetailsView({ course }) {
                 {isPaid && (
                   <div className="course-hero-price">
                     <span className="course-hero-price-value">{course.price}</span>
-                    <Link to={`${detailsPath}/enroll`} className="btn btn-yellow">
+                    <button type="button" className="btn btn-yellow" onClick={() => addItem(course)}>
                       Enroll
-                    </Link>
+                    </button>
                   </div>
                 )}
               </div>
@@ -170,7 +171,6 @@ function CourseDetailsView({ course }) {
                   <CurriculumPane
                     course={course}
                     isPaid={isPaid}
-                    detailsPath={detailsPath}
                     activeLesson={activeLesson}
                     onSelectLesson={setActiveLesson}
                   />
@@ -221,7 +221,8 @@ function OverviewPane() {
   )
 }
 
-function CurriculumPane({ course, isPaid, detailsPath, activeLesson, onSelectLesson }) {
+function CurriculumPane({ course, isPaid, activeLesson, onSelectLesson }) {
+  const { addItem } = useCart()
   if (isPaid) {
     return (
       <div className="course-product">
@@ -232,9 +233,9 @@ function CurriculumPane({ course, isPaid, detailsPath, activeLesson, onSelectLes
           </div>
           <div className="product-summary-actions">
             <span className="product-summary-price">{course.price}</span>
-            <Link to={`${detailsPath}/enroll`} className="btn btn-yellow">
+            <button type="button" className="btn btn-yellow" onClick={() => addItem(course)}>
               Enroll
-            </Link>
+            </button>
           </div>
         </div>
 

@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
 import { assets } from '../data/assets'
+import { useCart } from '../context/CartContext'
 
 export default function CategoryCourseCard({ course }) {
+  const { addItem } = useCart()
   const detailsPath = `/courses/${course.slug}`
   const image = course.categoryImage ?? course.image
 
@@ -27,9 +29,13 @@ export default function CategoryCourseCard({ course }) {
         </div>
         <div className="category-course-actions">
           <div className="category-course-actions-inner">
-            <Link to={detailsPath} className="category-buy-button">
+            <button
+              type="button"
+              className="category-buy-button cursor-pointer border-0"
+              onClick={() => addItem(course)}
+            >
               Buy course
-            </Link>
+            </button>
           </div>
         </div>
       </div>

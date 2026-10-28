@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 import { assets } from '../data/assets'
+import { useCart } from '../context/CartContext'
 
 export default function CourseListingCard({ course }) {
+  const { addItem } = useCart()
   const detailsPath = `/courses/${course.slug}`
-  const enrollPath = `${detailsPath}/enroll`
   const isPaid = course.price !== 'Free'
   const image = assets.courseListingImages[course.id] ?? course.image
 
@@ -69,9 +70,13 @@ export default function CourseListingCard({ course }) {
             {isPaid && (
               <div className="cards-button-right">
                 <div className="buttons-hover-show">
-                  <Link to={enrollPath} className="btn btn-dark course-listing-action">
+                  <button
+                    type="button"
+                    className="btn btn-dark course-listing-action"
+                    onClick={() => addItem(course)}
+                  >
                     Enroll
-                  </Link>
+                  </button>
                 </div>
               </div>
             )}

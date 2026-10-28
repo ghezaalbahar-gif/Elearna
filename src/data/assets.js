@@ -29,6 +29,7 @@ export const assets = {
   testimonialBackground: `${A}/66cd4b7767641295ddbc57c6_Testimonial%20Background.avif`,
 
   footerBackground: `${A}/66cc74abfe41ded5921fb644_Footer%20One%20Background-3.avif`,
+  authBackground: `${A}/66e17d14fc5b26abda6ac749_Membership%20Background.webp`,
 
   rating: `${A}/66c6fb8b857efb6c4c737b5d_Rating.svg`,
   booksIcon: `${A}/66c6fb8b420a4f79326c2e96_Books.svg`,
@@ -107,9 +108,6 @@ export const assets = {
   courseLockIcon: `${A}/66f23940a25b0bca5e55a3a3_lock%20icon.svg`,
 
   lessonDetailImage: `${B}/66f27b23782c6572c6eae153_66f2798135e3471739729357_Details.webp`,
-
-  blogHeroBackground: `${A}/66e7f3bebbe98a4b87f69448_Blog%20Hero%20Image.webp`,
-  blogPaginationArrow: `${A}/66c86330828a126c2bb6c4d9_Button%20Arrow%20Black.png`,
 
   coursePortraits: {
     angular: `${B}/66ebabcd61399462d208146a_Course%20Portrait%20Image.webp`,

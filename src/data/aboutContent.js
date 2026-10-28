@@ -197,7 +197,7 @@ export const aboutFooterColumns = [
     links: [
       { label: 'Course details', to: '/courses/crisis-management-and-problem-solving-strategies' },
       { label: 'Instructor details', to: '/team-members/lee-schmitt' },
-      { label: 'Blog details', to: '/blog-one/teaching-tools' },
+      { label: 'Blog details', to: '/blog-one/the-evolution-of-teaching-tools-in-the-21st-century' },
     ],
   },
 ]

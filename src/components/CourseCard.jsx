@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 import { assets } from '../data/assets'
+import { useCart } from '../context/CartContext'
 
 export default function CourseCard({ course }) {
+  const { addItem } = useCart()
   const detailsPath = `/courses/${course.slug}`
-  const enrollPath = `${detailsPath}/enroll`
 
   return (
     <article className="course-card">
@@ -49,9 +50,13 @@ export default function CourseCard({ course }) {
               Course Details
             </Link>
             {course.price !== 'Free' && (
-              <Link to={enrollPath} className="btn btn-dark course-action-button">
+              <button
+                type="button"
+                className="btn btn-dark course-action-button"
+                onClick={() => addItem(course)}
+              >
                 Enroll
-              </Link>
+              </button>
             )}
           </div>
         </div>

@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Home from './pages/Home'
+import HomeTwo from './pages/HomeTwo'
 import About from './pages/About'
 import Category from './pages/Category'
 import CourseListing from './pages/CourseListing'
@@ -51,6 +52,7 @@ export default function App() {
         <RouteReveal />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/home-two" element={<HomeTwo />} />
           <Route path="/about" element={<About />} />
           <Route path="/about-one" element={<About />} />
           <Route path="/category/:slug" element={<Category />} />

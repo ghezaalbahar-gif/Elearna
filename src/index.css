@@ -22,6 +22,12 @@
   --color-line-soft: rgba(123, 124, 125, 0.2);
   --color-line-faint: rgba(27, 44, 48, 0.1);
   --color-cart-scrim: rgba(0, 0, 0, 0.72);
+  --color-line-veil: rgba(255, 255, 255, 0.2);
+  --ease-roll: cubic-bezier(0.784, 0.325, 0.222, 0.98);
+  --shadow-float: 0 10px 60px 0 rgba(71, 107, 115, 0.08);
+  --shadow-panel: 0 10px 60px 0 rgba(71, 107, 115, 0.15);
+  --shadow-post: 0 30px 60px 0 rgba(43, 51, 79, 0.13);
+  --shadow-lift: 0 2px 60px 0 rgba(79, 155, 172, 0.28);
 }
 
 :root {
@@ -9151,4 +9157,16 @@ img {
     flex-flow: wrap;
     align-items: stretch;
   }
+}
+
+/* ---------- Home Two ---------- */
+
+/* The course cards stack their two buttons at full width, so .btn's shared
+   45px side padding has to come down — same metrics as the reference's
+   .button.course-button. */
+.home-two-action.btn {
+  width: 100%;
+  min-height: 50px;
+  padding: 10px 24px;
+  white-space: nowrap;
 }

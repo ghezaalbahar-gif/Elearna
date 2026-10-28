@@ -124,4 +124,45 @@ export const assets = {
     'jasmine-konopelski': `${B}/66e54d1d831de420da7dd70f_Team%20Member-6.webp`,
     'tonya-flatley': `${B}/66e54cf958de957ca8c9be63_Team%20Member-7.webp`,
   },
+
+  // Home Two only. Everything else on that page reuses the keys above.
+  homeTwo: {
+    heroBackground: `${A}/66cff276e74b05d80c07d986_Rectangle%2017.webp`,
+    detailIcons: [
+      `${A}/66cff274c1ce9bc0b1d47e11_Circle%20Icon%20One.svg`,
+      `${A}/66cff274e1a83a39a2571294_Circle%20Icon%20Two.svg`,
+      `${A}/66cff27596d8f5a818903b2a_Circle%20Icon%20Three.svg`,
+    ],
+    discoverImages: {
+      one: `${A}/66cff27628bf055ea8ae89f1_Potential%20Image.webp`,
+      two: `${A}/66cff2777e50749c4b90b5dd_Potential%20Image-2.webp`,
+      three: `${A}/66cff277582c8617efcf31ab_Potential%20Image-3.webp`,
+      four: `${A}/66cff277ceae6c7605edbd6e_Potential%20Image-4.webp`,
+      contact: `${A}/66de9b2474f1094cb7ea1767_Contact%20Us%20One.webp`,
+    },
+    learningWoman: `${A}/66cff274cdd4c2243b9ba324_Woman%20Image.webp`,
+    learningYellowCircle: `${A}/66cff2745bc495d2bda978f2_Yellow%20Circle.svg`,
+    learningOutlineCircle: `${A}/66cff274f001523c81c44d05_Outline%20Circle.svg`,
+    offerBackground: `${A}/66cff2751d8bac1df232a433_Boy%20Using%20Laptop%20Image.webp`,
+    quoteIcon: `${A}/66cff274c1ce9bc0b1d47e56_Quote%20Icons.svg`,
+    sliderArrow: `${A}/66cff27450908035329d09f0_Slider%20Arrow%20Black.svg`,
+    partnerLogosDark: [
+      { name: 'Shopia Fashion Hub', src: `${A}/66cff2747e50749c4b90b49e_Client%20Icon%20Black.svg`, width: 153, height: 51 },
+      { name: 'FE Fashion', src: `${A}/66cff274f86ce33e074f03d9_Client%20Icon%20Black-2.svg`, width: 131, height: 54 },
+      { name: 'Conclusions', src: `${A}/66cff274cdd4c2243b9ba268_Client%20Icon%20Black-3.svg`, width: 163, height: 52 },
+      { name: 'Aech Fashion Store', src: `${A}/66cff274e855d20c26ff2fba_Client%20Icon%20Black-4.svg`, width: 98, height: 51 },
+      { name: 'B.', src: `${A}/66cff274d9213b6ef2e8640e_Client%20Icon%20Black-5.svg`, width: 66, height: 53 },
+      { name: 'Carla Textural', src: `${A}/66cff274d9213b6ef2e86488_Client%20Icon%20Black-6.svg`, width: 160, height: 52 },
+    ],
+  },
+
+  // Portrait crops the Home Two course grid uses instead of the listing crops.
+  coursePortraitImages: {
+    angular: `${B}/66ebabcd61399462d208146a_Course%20Portrait%20Image.webp`,
+    mongodb: `${B}/66ebabde3e87f8984b6782a1_Course%20Portrait%20Image-9.webp`,
+    operations: `${B}/66ebabf4c17d78e3224b9b5b_Course%20Portrait%20Image-8.webp`,
+    risk: `${B}/66ebac0cfd1f38c62e59431b_Course%20Portrait%20Image-7.webp`,
+    'design-systems': `${B}/66fe66cdef763efcc757aefb_Course%20Image-2.webp`,
+    mern: `${B}/66ebac3db9565bc62a90430e_Course%20Portrait%20Image-5.webp`,
+  },
 }

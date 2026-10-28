@@ -1,0 +1,568 @@
+import { assets } from './assets'
+
+const B = 'https://cdn.prod.website-files.com/66cbf9eecd2d43a6644e1854'
+
+export const courses = [
+  {
+    id: 'angular',
+    slug: 'building-single-page-applications-with-angular',
+    category: 'Development',
+    title: 'Building single page applications with angular',
+    rating: '5.00',
+    reviews: '328',
+    lessons: 6,
+    enrolled: '12k',
+    price: 'Free',
+    image: assets.courseImages.angular,
+    categoryImage: assets.coursePortraits.angular,
+    heroImage: `${B}/66ed0f6e6ead3233a909839e_Product%20Banner.webp`,
+    alt: 'Developer building a single page application on a laptop',
+    includeInAll: false,
+    featured: true,
+    timeSpan: '4 weeks',
+    skillLevel: 'Intermediate',
+    videoLessons: '5 hours',
+    curriculumMode: 'lesson-tabs',
+    curriculumItems: [
+      {
+        title: 'Introduction to angular and single page applications',
+        video: 'https://www.youtube.com/embed/setu9Ir1miY',
+      },
+      { title: 'Angular components', video: 'https://www.youtube.com/embed/PcFXt8o7uGg' },
+      {
+        title: 'Angular modules and services',
+        video: 'https://www.youtube.com/embed/EFHoH15i4Zg',
+      },
+      {
+        title: 'Angular routing and navigation',
+        video: 'https://www.youtube.com/embed/De2unauLBks',
+      },
+      { title: 'Working with forms in angular', video: 'https://www.youtube.com/embed/pLgPFfFdpDs' },
+      { title: 'HTTP client and APIs', video: 'https://www.youtube.com/embed/Gp8A55gZnBU' },
+      { title: 'State management in angular', video: 'https://www.youtube.com/embed/QjDQlD3jUQk' },
+      { title: 'Advanced angular features', video: 'https://www.youtube.com/embed/EcIEiuzvJgo' },
+      {
+        title: 'Deploying angular applications',
+        video: 'https://www.youtube.com/embed/gKcltWATLvk',
+      },
+    ],
+    instructorIds: ['leslie-upton', 'darnell-kuphal', 'lee-schmitt', 'wanda-abshire'],
+    faqSet: 'development',
+  },
+  {
+    id: 'crisis-management',
+    slug: 'crisis-management-and-problem-solving-strategies',
+    category: 'Management',
+    title: 'Crisis management and problem-solving strategies',
+    rating: '4.88',
+    reviews: '210',
+    lessons: 6,
+    enrolled: '8k',
+    price: 'Free',
+    image: assets.courseImages.crisis,
+    heroImage: `${B}/6710c8dd40a77e5ff4561f23_Course%20Image-9.webp`,
+    alt: 'Instructor leading a crisis management workshop at a whiteboard',
+    includeInAll: true,
+    featured: false,
+    timeSpan: '3 weeks',
+    skillLevel: 'Intermediate',
+    videoLessons: '8 hours',
+    curriculumMode: 'lesson-tabs',
+    curriculumItems: [
+      {
+        title: 'Introduction to crisis management and problem-solving',
+        video: 'https://www.youtube.com/embed/setu9Ir1miY',
+      },
+      {
+        title: 'Coaching and mentoring for developing future leaders',
+        video: 'https://www.youtube.com/embed/PcFXt8o7uGg',
+      },
+      {
+        title: 'Crisis management and preparing for the unexpected',
+        video: 'https://www.youtube.com/embed/EFHoH15i4Zg',
+      },
+      {
+        title: 'Project management essentials tools and methodologies',
+        video: 'https://www.youtube.com/embed/pLgPFfFdpDs',
+      },
+      {
+        title: 'Marketing management and understanding market dynamics',
+        video: 'https://www.youtube.com/embed/pLgPFfFdpDs',
+      },
+      {
+        title: 'Negotiation skills and finding win-win solutions',
+        video: 'https://www.youtube.com/embed/Gp8A55gZnBU',
+      },
+    ],
+    instructorIds: ['lee-schmitt', 'tonya-flatley', 'leslie-upton', 'wanda-abshire'],
+    faqSet: 'management',
+  },
+  {
+    id: 'photoshop',
+    slug: 'advanced-photoshop-techniques-for-designers',
+    category: 'Design',
+    title: 'Advanced photoshop techniques for designers',
+    rating: '5.00',
+    reviews: '1.2K',
+    lessons: 8,
+    enrolled: '25k',
+    price: 'Free',
+    image: assets.courseImages.photoshop,
+    categoryImage: assets.courseImages.photoshopCategory,
+    heroImage: `${B}/6710bcfbe2ff495668259a3f_Course%20Image-6.webp`,
+    alt: 'Designer editing a digital illustration in Photoshop',
+    includeInAll: true,
+    featured: false,
+    timeSpan: '4 weeks',
+    skillLevel: 'Beginner',
+    videoLessons: '10 hours',
+    curriculumMode: 'lesson-tabs',
+    curriculumItems: [
+      {
+        title: 'Introduction to photoshop techniques for designers',
+        video: 'https://www.youtube.com/embed/setu9Ir1miY',
+      },
+      {
+        title: 'Responsive web design for making sites mobile-friendly',
+        video: 'https://www.youtube.com/embed/PcFXt8o7uGg',
+      },
+      {
+        title: 'User experience (UX) basics design for the user',
+        video: 'https://www.youtube.com/embed/EFHoH15i4Zg',
+      },
+      {
+        title: 'Creating compelling user interfaces (UI)',
+        video: 'https://www.youtube.com/embed/De2unauLBks',
+      },
+      {
+        title: 'Mastering color theory with effective color schemes',
+        video: 'https://www.youtube.com/embed/pLgPFfFdpDs',
+      },
+    ],
+    instructorIds: ['leslie-upton', 'lee-schmitt', 'jasmine-konopelski', 'wanda-abshire'],
+    faqSet: 'design',
+  },
+  {
+    id: 'operations',
+    slug: 'operations-management-and-process-improvement',
+    category: 'Finance',
+    title: 'Operations management and process improvement',
+    rating: '5.00',
+    reviews: '812',
+    lessons: 12,
+    enrolled: '23k',
+    price: 'Free',
+    image: assets.courseImages.operations,
+    categoryImage: assets.coursePortraits.operations,
+    heroImage: `${B}/66ed0fe077fcd2bfa7fc161d_Product%20Banner-8.webp`,
+    alt: 'Student taking notes during an online finance lesson',
+    includeInAll: true,
+    featured: false,
+    timeSpan: '4 weeks',
+    skillLevel: 'Expert',
+    videoLessons: '5 hours',
+    curriculumMode: 'lesson-tabs',
+    curriculumItems: [
+      {
+        title: 'Introduction to personal finance and managing your money',
+        video: 'https://www.youtube.com/embed/setu9Ir1miY',
+      },
+      {
+        title: 'Budgeting basics, creating and sticking to a budget',
+        video: 'https://www.youtube.com/embed/PcFXt8o7uGg',
+      },
+      {
+        title: 'Retirement planning and strategies for a secure future',
+        video: 'https://www.youtube.com/embed/EFHoH15i4Zg',
+      },
+      {
+        title: 'Risk management for protecting your financial assets',
+        video: 'https://www.youtube.com/embed/De2unauLBks',
+      },
+      {
+        title: 'Financial markets overview and how they work',
+        video: 'https://www.youtube.com/embed/pLgPFfFdpDs',
+      },
+      {
+        title: 'Investment strategies and active vs. passive investing',
+        video: 'https://www.youtube.com/embed/Gp8A55gZnBU',
+      },
+      {
+        title: 'Introduction to corporate finance and key concepts and tools',
+        video: 'https://www.youtube.com/embed/QjDQlD3jUQk',
+      },
+    ],
+    instructorIds: ['jasmine-konopelski', 'darnell-kuphal', 'steven-roob', 'leslie-upton'],
+    faqSet: 'finance',
+  },
+  {
+    id: 'mongodb',
+    slug: 'database-integration-with-mongodb',
+    category: 'Development',
+    title: 'Database integration with MongoDB',
+    rating: '4.49',
+    reviews: '756',
+    lessons: 10,
+    enrolled: '7k',
+    price: '$59',
+    image: assets.courseImages.mongodb,
+    categoryImage: assets.coursePortraits.mongodb,
+    heroImage: `${B}/66ed0fbc3314a17afb42c429_Product%20Banner-9.webp`,
+    alt: 'Two developers collaborating on a database project',
+    includeInAll: true,
+    featured: true,
+    timeSpan: '2 weeks',
+    skillLevel: 'Beginner',
+    videoLessons: '2 hours',
+    curriculumMode: 'locked-list',
+    paidLessons: [
+      'Introduction to MongoDB and NoSQL database fundamentals',
+      'Setting up MongoDB installation and configuration',
+      'Understanding MongoDB data model',
+      'Using MongoDB with Node.js',
+      'Real-time data processing',
+      'MongoDB schema design',
+      'Integrating MongoDB with other technologies',
+    ],
+    instructorIds: ['lee-schmitt', 'jasmine-konopelski', 'darnell-kuphal', 'wanda-abshire'],
+    faqSet: 'development',
+  },
+  {
+    id: 'risk',
+    slug: 'risk-management-and-business-continuity',
+    category: 'Management',
+    title: 'Risk management and business continuity',
+    rating: '4.88',
+    reviews: '210',
+    lessons: 3,
+    enrolled: '8k',
+    price: '$49',
+    image: assets.courseImages.risk,
+    heroImage: `${B}/66ed0ff4a858685d0fd197aa_Product%20Banner-7.webp`,
+    alt: 'Professional studying risk management on a tablet',
+    includeInAll: true,
+    featured: true,
+    timeSpan: '3 weeks',
+    skillLevel: 'Intermediate',
+    videoLessons: '8 hours',
+    curriculumMode: 'locked-list',
+    paidLessons: [
+      'Introduction to management, principles and practices',
+      'Coaching and mentoring for developing future leaders',
+      'Crisis management and preparing for the unexpected',
+      'Project management essentials tools and methodologies',
+      'Marketing management and understanding market dynamics',
+      'Financial management like budgeting and resource allocation',
+      'Negotiation skills and finding win-win solutions',
+    ],
+    instructorIds: ['darnell-kuphal', 'lee-schmitt', 'steven-roob', 'tonya-flatley'],
+    faqSet: 'management',
+  },
+  {
+    id: 'mern',
+    slug: 'full-stack-development-with-the-mern-stack',
+    category: 'Development',
+    title: 'Full-stack development with the MERN stack',
+    rating: '5.00',
+    reviews: '985',
+    lessons: 12,
+    enrolled: '22k',
+    price: '$72',
+    image: assets.courseImages.mern,
+    heroImage: `${B}/66ed1051ab3cfcf4e4a0520d_Product%20Banner-5.webp`,
+    alt: 'Developer working with code across multiple screens',
+    includeInAll: true,
+    featured: true,
+    timeSpan: '8 weeks',
+    skillLevel: 'Expert',
+    videoLessons: '4 hours',
+    curriculumMode: 'locked-list',
+    paidLessons: [
+      'Introduction to the MERN Stack and Benefits',
+      'Creating a RESTful API with Express.js',
+      'Connecting React to MongoDB',
+      'Form handling in React',
+      'Implementing CRUD operations in a MERN application',
+      'Deploying your MERN stack application',
+      'Handling errors in Express and React',
+      'Building a full-stack application',
+      'Optimizing performance in MERN applications',
+    ],
+    instructorIds: ['lee-schmitt', 'jasmine-konopelski', 'leslie-upton'],
+    faqSet: 'development',
+  },
+  {
+    id: 'interactive-web-design',
+    slug: 'learn-interactive-web-design-by-building-real-projects',
+    category: 'Design',
+    title: 'Learn interactive Web Design by building real projects',
+    rating: '4.49',
+    reviews: '756',
+    lessons: 12,
+    enrolled: '23k',
+    price: '$79',
+    image: assets.courseImages.interactiveWebDesign,
+    categoryImage: assets.courseImages.interactiveWebDesign,
+    heroImage: `${B}/66ed0f078a943ad491878b2f_Product%20Banner-4.webp`,
+    alt: 'Designer presenting an interactive web design project',
+    includeInAll: false,
+    featured: false,
+    timeSpan: '4 weeks',
+    skillLevel: 'Intermediate',
+    videoLessons: '2 hours',
+    curriculumMode: 'locked-list',
+    paidLessons: [
+      'Introduction to web design, concepts and tools',
+      'Responsive web design for making sites mobile-friendly',
+      'User experience (UX) basics design for the user',
+      'Creating compelling user interfaces (UI)',
+      'Mastering color theory with effective color schemes',
+      'Layout techniques like Flexbox and Grid systems',
+    ],
+    instructorIds: ['darnell-kuphal', 'leslie-upton', 'tonya-flatley', 'lee-schmitt'],
+    faqSet: 'design',
+  },
+  {
+    id: 'design-systems',
+    slug: 'design-systems-and-pattern-libraries',
+    category: 'Design',
+    title: 'Design systems and pattern libraries',
+    rating: '5.00',
+    reviews: '1.2K',
+    lessons: 8,
+    enrolled: '25k',
+    price: '$99',
+    image: assets.courseImages.designSystems,
+    categoryImage: assets.courseImages.designSystems,
+    heroImage: `${B}/66fe674765e5e7ef734200d2_Course%20Image-3.webp`,
+    alt: 'Designer documenting a design system and pattern library',
+    includeInAll: false,
+    featured: false,
+    timeSpan: '4 weeks',
+    skillLevel: 'Beginner',
+    videoLessons: '10 hours',
+    curriculumMode: 'locked-list',
+    paidLessons: [
+      'Introduction to web design, concepts and tools',
+      'Responsive web design for making sites mobile-friendly',
+      'User experience (UX) basics design for the user',
+      'Creating compelling user interfaces (UI)',
+      'Mastering color theory with effective color schemes',
+      'Layout techniques like Flexbox and Grid systems',
+    ],
+    instructorIds: ['jasmine-konopelski', 'steven-roob', 'lee-schmitt', 'tonya-flatley'],
+    faqSet: 'design',
+  },
+  {
+    id: 'corporate-finance',
+    slug: 'understanding-corporate-finance-and-investments',
+    category: 'Finance',
+    title: 'Understanding corporate finance and investments',
+    rating: '4.88',
+    reviews: '210',
+    lessons: 10,
+    enrolled: '8k',
+    price: 'Free',
+    image: assets.courseImages.corporateFinance,
+    categoryImage: assets.courseImages.corporateFinanceCategory,
+    heroImage: `${B}/6710bb33ef51448b568bfb5a_Course%20Image-3-2.webp`,
+    alt: 'Finance professional reviewing corporate investment charts',
+    includeInAll: false,
+    featured: false,
+    timeSpan: '10 weeks',
+    skillLevel: 'Expert',
+    videoLessons: '2 hours',
+    curriculumMode: 'lesson-tabs',
+    curriculumItems: [
+      {
+        title: 'Introduction to Corporate Finance and Investments',
+        video: 'https://www.youtube.com/embed/setu9Ir1miY',
+      },
+      {
+        title: 'Budgeting basics, creating and sticking to a budget',
+        video: 'https://www.youtube.com/embed/PcFXt8o7uGg',
+      },
+      {
+        title: 'Retirement planning and strategies for a secure future',
+        video: 'https://www.youtube.com/embed/EFHoH15i4Zg',
+      },
+      {
+        title: 'Risk management for protecting your financial assets',
+        video: 'https://www.youtube.com/embed/De2unauLBks',
+      },
+      {
+        title: 'Financial markets overview and how they work',
+        video: 'https://www.youtube.com/embed/pLgPFfFdpDs',
+      },
+    ],
+    instructorIds: ['jasmine-konopelski', 'leslie-upton', 'tonya-flatley', 'darnell-kuphal'],
+    faqSet: 'finance',
+  },
+  {
+    id: 'personal-finance',
+    slug: 'the-complete-guide-to-personal-and-business-finance',
+    category: 'Finance',
+    title: 'The complete guide to personal and business finance',
+    rating: '4.88',
+    reviews: '210',
+    lessons: 10,
+    enrolled: '8k',
+    price: '$99',
+    image: assets.courseImages.personalFinance,
+    categoryImage: assets.courseImages.personalFinanceCategory,
+    heroImage: `${B}/66ed0f590248e835803c700a_Product%20Banner-3.webp`,
+    alt: 'Professional planning personal and business finances',
+    includeInAll: false,
+    featured: false,
+    timeSpan: '10 weeks',
+    skillLevel: 'Expert',
+    videoLessons: '2 hours',
+    curriculumMode: 'locked-list',
+    paidLessons: [
+      'Introduction to personal finance and managing your money',
+      'Budgeting basics, creating and sticking to a budget',
+      'Retirement planning and strategies for a secure future',
+      'Risk management for protecting your financial assets',
+      'Financial markets overview and how they work',
+      'Investment strategies and active vs. passive investing',
+      'Introduction to corporate finance and key concepts and tools',
+    ],
+    instructorIds: ['lee-schmitt', 'leslie-upton', 'jasmine-konopelski', 'tonya-flatley'],
+    faqSet: 'finance',
+  },
+  {
+    id: 'grow-brand',
+    slug: 'grow-your-brand-and-reach-your-audience',
+    category: 'Management',
+    title: 'Grow your brand and reach your audience',
+    rating: '4.88',
+    reviews: '210',
+    lessons: 10,
+    enrolled: '8k',
+    price: '$49',
+    image: assets.courseImages.growBrand,
+    categoryImage: assets.courseImages.growBrandCategory,
+    heroImage: `${B}/66ed0f20552be46ebf3b40c5_Product%20Banner-2.webp`,
+    alt: 'Marketer presenting a brand growth strategy',
+    includeInAll: false,
+    featured: false,
+    timeSpan: '6 weeks',
+    skillLevel: 'Beginner',
+    videoLessons: '3 hours',
+    curriculumMode: 'locked-list',
+    paidLessons: [
+      'Introduction to management, principles and practices',
+      'Coaching and mentoring for developing future leaders',
+      'Crisis management and preparing for the unexpected',
+      'Project management essentials tools and methodologies',
+      'Marketing management and understanding market dynamics',
+      'Financial management like budgeting and resource allocation',
+      'Negotiation skills and finding win-win solutions',
+    ],
+    instructorIds: ['leslie-upton', 'lee-schmitt', 'jasmine-konopelski', 'darnell-kuphal'],
+    faqSet: 'management',
+  },
+]
+
+export const courseOverview = {
+  description:
+    'Lorem ipsum dolor sit amet consectetur. Et facilisis nunc quam quam etiam donec pellentesque ut. Nisl pellentesque at aliquam scelerisque non consequat amet curabitur. Imperdiet habitant purus pulvinar diam. Molestie pharetra morbi eu odio volutpat. Cursus velit elit senectus auctor vitae tristique velit. Feugiat consequat diam ipsum suspendisse vestibulum ipsum malesuada. Adipiscing nulla hac enim vivamus elementum massa. Est feugiat sed eget vestibulum.',
+  features: [
+    'Lorem ipsum dolor sit amet consectetur.',
+    'Et facilisis nunc quam quam etiam donec pellentesque ut.',
+    'Nisl pellentesque at aliquam scelerisque non consequat amet curabitur. Imperdiet habitant purus pulvinar diam.',
+    'Molestie pharetra morbi eu odio volutpat.',
+    'Cursus velit elit senectus auctor vitae tristique velit.',
+    'Feugiat consequat diam ipsum suspendisse vestibulum ipsum malesuada.',
+  ],
+  audience:
+    'Lorem ipsum dolor sit amet consectetur. Nibh urna quis tempus elit ultrices amet. Convallis facilisis duis vivamus ut suspendisse imperdiet vel eleifend maecenas. Mi senectus eu nec mattis lacus dolor in diam cursus. Eu magna enim sed duis enim fames vitae ornare pretium. Consequat egestas amet eget neque sed. Quis elementum amet diam sapien adipiscing dis dignissim.',
+}
+
+export const lessonIntro =
+  'Lorem ipsum dolor sit amet consectetur. Et facilisis nunc quam quam etiam donec pellentesque ut. Nisl pellentesque at aliquam scelerisque non consequat amet curabitur. Imperdiet habitant purus pulvinar diam.'
+
+export const lessonSummary =
+  'Lorem ipsum dolor sit amet consectetur. Nibh urna quis tempus elit ultrices amet. Convallis facilisis duis vivamus ut suspendisse imperdiet vel eleifend maecenas. Mi senectus eu nec mattis lacus dolor in diam cursus.'
+
+export const curriculumIntro =
+  'Lorem ipsum dolor sit amet consectetur. Et facilisis nunc quam quam etiam donec pellentesque ut. Nisl pellentesque at aliquam scelerisque non consequat amet curabitur. Imperdiet habitant purus pulvinar diam. Molestie pharetra morbi eu odio volutpat. Cursus velit elit senectus auctor vitae tristique velit. Feugiat consequat diam ipsum suspendisse vestibulum ipsum malesuada.'
+
+export const instructorIntro = curriculumIntro
+
+const faqAnswer =
+  'Lorem ipsum dolor sit amet consectetur. Et facilisis nunc quam quam etiam donec pellentesque ut. Nisl pellentesque at aliquam scelerisque non consequat amet curabitur. Imperdiet habitant purus pulvinar diam. Molestie pharetra morbi eu odio volutpat. Cursus velit elit senectus auctor vitae tristique velit. Feugiat consequat diam ipsum suspendisse vestibulum ipsum malesuada.'
+
+const faqQuestions = {
+  development: [
+    'What is web development?',
+    'How long does it take to develop a website?',
+    'What are web development frameworks?',
+    'How can I ensure my website is secure?',
+    'How can I improve my website’s performance?',
+  ],
+  management: [
+    'What are the current trends in management?',
+    'How do I handle underperforming employees?',
+    'What role does training play in management?',
+    'How important is communication in management?',
+    'What is performance management?',
+  ],
+  design: [
+    'Why is responsive design important?',
+    'What is the difference between UI and UX design?',
+    'What is the web design process?',
+    'How important is content in web design?',
+    'Can I customize my website’s design?',
+  ],
+  finance: [
+    'What are some current trends in finance?',
+    'How do I choose a financial advisor?',
+    'What is risk management in finance?',
+    'What tools can help with financial planning?',
+    'What types of insurance should I consider?',
+  ],
+}
+
+export const faqSets = Object.fromEntries(
+  Object.entries(faqQuestions).map(([key, questions]) => [
+    key,
+    questions.map((question) => ({ question, answer: faqAnswer })),
+  ]),
+)
+
+export const instructors = {
+  'leslie-upton': { name: 'Leslie Upton', image: assets.instructorImages['leslie-upton'] },
+  'darnell-kuphal': { name: 'Darnell Kuphal', image: assets.instructorImages['darnell-kuphal'] },
+  'lee-schmitt': { name: 'Lee Schmitt', image: assets.instructorImages['lee-schmitt'] },
+  'wanda-abshire': { name: 'Wanda Abshire', image: assets.instructorImages['wanda-abshire'] },
+  'steven-roob': { name: 'Steven Roob', image: assets.instructorImages['steven-roob'] },
+  'jasmine-konopelski': {
+    name: 'Jasmine Konopelski',
+    image: assets.instructorImages['jasmine-konopelski'],
+  },
+  'tonya-flatley': { name: 'Tonya Flatley', image: assets.instructorImages['tonya-flatley'] },
+}
+
+export const relatedCourseSlugs = [
+  'building-single-page-applications-with-angular',
+  'database-integration-with-mongodb',
+  'operations-management-and-process-improvement',
+]
+
+export const courseTabs = ['All courses', 'Design', 'Development', 'Management', 'Finance']
+
+export const getCoursesForTab = (tab) => {
+  if (tab === 'All courses') return courses.filter((course) => course.includeInAll)
+  return courses.filter((course) => course.category === tab)
+}
+
+export const getCourseBySlug = (slug) => courses.find((course) => course.slug === slug)
+
+export const getRelatedCourses = () =>
+  relatedCourseSlugs.map((slug) => getCourseBySlug(slug)).filter(Boolean)
+
+export const getInstructorsForCourse = (course) =>
+  course.instructorIds.map((id) => instructors[id]).filter(Boolean)
+
+export const featuredCourses = courses.filter((course) => course.featured)
